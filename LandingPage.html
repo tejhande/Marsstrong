@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Landing_Page.css" />
+    <title>Landing Page</title>
+  </head>
+
+  <body onload="myFunc()">
+    <nav>
+      <div class="heading">Marsstrong</div>
+      <span class="sideMenuButton" onclick="openNavbar()"> ☰ </span>
+
+      <div class="navbar">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#My Projects">About</a></li>
+          <li><a href="#contact">Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Side navigation bar for 
+		responsive website -->
+    <div class="sideNavigationBar" id="sideNavigationBar">
+      <a href="#" class="closeButton" onclick="closeNavbar()"> </a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Sign Up</a>
+    </div>
+
+    <!-- Content -->
+    <div class="line" id="Home">
+      <div class="side1">
+        <h1>Marsstrong International</h1>
+        <button>
+          <!-- <a href="Portfolio.html" target="_blank" id="website"> -->
+          <a href="https://maps.app.goo.gl/R141sJ9xNeFvhWHLA" target="_blank" id="explore_button">
+            Explore More
+          </a>
+        </button>
+      </div>
+      <div class="side2">
+        <img src="Images/logo.png" width="500" alt="Marsstrong Logo" />
+      </div>
+    </div>
+
+    <section class="about" id="My Projects">
+      <div class="content">
+        <div class="title">
+          <span>Services Offered</span>
+        </div>
+        <div class="boxes">
+          <div class="box">
+            <div class="topic">
+              <a href="" target="_blank"> Company Incorporation </a>
+            </div>
+            <p>
+              <ul> 
+                <li>• Private Limited Company
+                • Limited Liability Partnership
+                • Partnership Firm
+                • Proprietorship Firm</li>
+              </ul>
+            </p>
+          </div>
+          <div class="box">
+            <div class="topic">
+              <a href="" target="_blank"> Registrations & Filings </a>
+            </div>
+            <p>
+              <ul>
+                <li>• Goods and Services Tax (GST)
+                • MVAT/CST
+                • Excise
+                • MSME/SSI
+                • PAN/TAN
+                • FASSAI Registration</li>
+              </ul>   
+            </p>
+          </div>
+          <div class="box">
+            <div class="topic">
+              <a href="" target="_blank"> Shipping & Logistics </a>
+            </div>
+            <p>
+              <ul>
+                <li>• Custom Clearence • LUT Bond</li>
+              </ul>
+              </p>
+          </div>
+          <div class="box">
+            <div class="topic">
+              <a href="" target="_blank"> Import & Export </a>
+            </div>
+            <p><ul><li>• Export & Import Data</li></ul></p>
+          </div>
+          <div class="box">
+            <div class="topic">
+              <a href="" target="_blank">
+                All Services Related to ADDL. DGFT Mumbai
+              </a>
+            </div>
+            <p><ul>
+              <li>• IEC & Its Modification
+              • Advance License/EPCG/DFIA
+              • MEIS/SEIS
+              •TED Refund & Deemed Export Benefits</li>
+            </ul>
+            </p>
+          </div>
+          <div class="box">
+            <div class="topic">
+              <a href="" target="_blank">
+                All Services Related to DGFT Delhi Premises
+              </a>
+            </div>
+            <p>
+              <ul>
+                <li>• SION Norms Fixation                
+                • Policy Relaxation Cases
+                • SCOMET Export Licenses</li>
+              </ul>
+            </p>
+          </div>
+
+          <div class="box">
+            <div class="topic">
+              <a href="" target="_blank"> Post Export Activities at Customs </a>
+            </div>
+            <p>
+              <ul>
+                <li>• License Verification
+                • Bond Cancellation</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="content">
+        <div class="title"><span>Sign Up</span></div>
+        <div class="contactMenu">
+          <form>
+          <div class="input1">
+            <div class="label1">Your Name</div>
+            <div class="input2">
+              <input type="text" placeholder="Enter your Name here" required pattern="[a-zA-Z\s]+" />
+            </div>
+            <div class="label1">
+              <label>Your Email</label>
+            </div>
+            <div class="input2">
+              <input type="email" placeholder="example@gmail.com" required />
+            </div>
+            <div class="label1">
+              <label>Your Mobile Number</label>
+            </div>
+            <div class="input2">
+              <input type="tel" id="mobile" placeholder="+91__________" pattern="^\+?([0-9]{12})$" required value="+91" />
+            </div>
+            <div class="container">
+              <div class="button">
+                <button type="submit">Sign Up</button>
+              </div>
+              <div class="button">
+                <button type="reset" value="Reset">Reset</button>
+              </form>
+              </div>
+            </div>
+          </div>
+          <div class="input3">
+            <div class="rightside1">
+              <div class="title1">
+                <span> Contact Us </span>
+              </div>
+              <div class="content1" id="address" >
+                401, C-2, Panvelkars Sankul, Badlapur (East) Thane - 421503
+              </div>
+              <div class="title1">
+                <span>More Information</span>
+              </div>
+              <div class="content1">
+                Marsstrong International, established in November 2017, is a
+                versatile company providing a range of services, including
+                company registrations, tax filings, shipping, logistics, and
+                import-export facilitation. As a Private Limited Company,
+                Limited Liability Partnership, Partnership Firm, and
+                Proprietorship Firm, we excel in customs clearance, LUT Bond,
+                and offer DGFT-related services in Mumbai and Delhi. Our
+                expertise covers IEC, Advance License, MEIS/SEIS, TED Refund,
+                SION Norms Fixation, and SCOMET Export Licenses. With a focus on
+                post-export activities, we ensure license verification and bond
+                cancellation. Marsstrong International is committed to
+                delivering tailored solutions and upholding values that define
+                our excellence in international trade. Explore our webpage for
+                more insights into our history, services, and dedicated team.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer section -->
+    <footer>
+      <div class="footer">
+        <span>
+          Created By
+          <a href="Portfolio.html" target="_blank" id="website">
+            Tejas Hande
+          </a>
+        </span>
+      </div>
+    </footer>
+    <script src="Landing_Page.js"></script>
+  </body>
+</html>
+<!-- Tejas Hande
+tejasamolhande@gmail.com
+8600828734 -->
