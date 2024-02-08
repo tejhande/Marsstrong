@@ -441,8 +441,9 @@ tejasamolhande@gmail.com
     background-color: green;
     overflow-x: hidden;
     transition: 0.3s ease-in;
-    padding-top: 60px;
-    display: none;
+    padding-top: 6px;
+    display: flex;
+	justify-content:space-around;
 }
 
 .sideNavigationBar a {
