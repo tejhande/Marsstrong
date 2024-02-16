@@ -27,8 +27,14 @@ function form_submit(){
     
 }
 
-function goToResume(){
-	alert(`Redirecting to Resume Page...`);
+function goToResume() {
+    var ans = confirm(`Downloading Resume`);
+    if  (ans == true) {
+    } else {
+        resumeLink.removeAttribute("download");
+        resumeLink.removeAttribute("href");
+        return false; 
+    }
 }
 
 
