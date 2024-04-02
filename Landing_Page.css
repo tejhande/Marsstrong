@@ -66,6 +66,7 @@ nav .sideMenuButton {
 @media screen and (max-width: 600px) {
 	nav .sideMenuButton {
 		display: flex;
+		display: none;
 	}
 
 	nav .navbar {
@@ -386,9 +387,9 @@ footer .footer span a:hover {
 		max-width: 70%;
 	}	
 	.contactMenu .input1 input{
-		width: 95vw;
-	}
-	
+	width: 95vw;
+}
+
 }
 .box {
 	transition: transform 0.3s ease;
