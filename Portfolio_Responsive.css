@@ -52,6 +52,9 @@
 		text-align: center; 
 		width: 35%; 
 	} 
+	body{
+		width: 100vw;
+	}
 
 } 
 

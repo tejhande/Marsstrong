@@ -12,7 +12,7 @@ body {
 }
 
 nav {
-	width: 100%;
+	width: 100vw;
 	height: 80px;
 	display: flex;
 	justify-content: space-between;
@@ -73,7 +73,8 @@ nav .sideMenuButton {
 	}
 
 	.sideNavigationBar {
-		display: block !important;
+		/* display: block !important; */
+		display: none;
 	}
 }
 
@@ -226,7 +227,7 @@ section .topic a {
 }
 
 .content .title {
-	width: 80%;
+	width: 60vw;
 	text-align: center;
 	font-weight: bolder;
 	font-size: 40px;
@@ -384,6 +385,10 @@ footer .footer span a:hover {
 	.about .boxes .box {
 		max-width: 70%;
 	}	
+	.contactMenu .input1 input{
+		width: 95vw;
+	}
+	
 }
 .box {
 	transition: transform 0.3s ease;
@@ -413,8 +418,3 @@ tejasamolhande@gmail.com
 	text-decoration: underline solid black;
 
 }
-
-
-
-
-
