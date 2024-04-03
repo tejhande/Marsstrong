@@ -4,11 +4,11 @@
 	box-sizing: border-box;
 }
 
-body {
+body {
+ background-color: white;
 	color: black;
 	font-family: "Fira Sans", sans-serif; 
- background-color: transparent;
- opacity: 0; /* Set opacity to 0 */
+ background-color: rgb(188, 197, 241);
 }
 
 nav {
