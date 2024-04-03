@@ -23,6 +23,18 @@ function myFunc(){
 	alert(`Welcome To Marsstrong`);
 }
 
+function form_submit(event) {
+    event.preventDefault(); 
+    var form = document.getElementById("myForm");
+    if (form.checkValidity()) {
+        window.location.href = 'success.html';
+    } else {
+        alert("Please fill out all required fields correctly.");
+    }
+    
+    return false; 
+}
+
 // Tejas Hande
 // tejasamolhande@gmail.com
 // 8600828734
