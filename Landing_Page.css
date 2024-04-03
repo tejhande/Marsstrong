@@ -314,7 +314,7 @@ button:hover {
 .content1 {
 	width: 450px;
 	margin-top: 2px;
-	color: rgb(47, 47, 47);
+	color: black;
 	text-align:justify;
 }
 
@@ -356,7 +356,7 @@ footer .footer span a:hover {
 	.content1 {
 		width: 100%;
 		margin-top: 2px;
-		color: grey;
+		color: black;
 	}
 
 	.side2 img {
