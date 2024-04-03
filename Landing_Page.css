@@ -5,10 +5,9 @@
 }
 
 body {
- background-color: white;
-	color: black;
+ 	color: black;
 	font-family: "Fira Sans", sans-serif; 
- background-color: rgb(188, 197, 241);
+ 	background-image: linear-gradient(to bottom right, #c9d6ff, #2974fa);
 }
 
 nav {
@@ -162,7 +161,6 @@ button:hover {
 @media screen and (max-width: 980px) {
 	.side2 img {
 		width: 350px;
-		background-color: rgb(188, 197, 241);
 	}
 
 	.side1 h1 {
