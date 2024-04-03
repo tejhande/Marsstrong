@@ -5,10 +5,10 @@
 }
 
 body {
-	background-color: white;
+ background-color: white;
 	color: black;
-	font-family: "Fira Sans", sans-serif;
-	background-color: rgb(188, 197, 241);
+	font-family: "Fira Sans", sans-serif; 
+ background-color: rgb(188, 197, 241);
 }
 
 nav {
