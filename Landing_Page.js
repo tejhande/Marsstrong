@@ -20,7 +20,7 @@ function showWebsiteAlert() {
   document.getElementById("website").addEventListener("click", showWebsiteAlert);
   
 function myFunc(){
-	alert(`Welcome To Marsstrong.com`);
+	alert(`Welcome To Marsstrong`);
 }
 
 // Tejas Hande
