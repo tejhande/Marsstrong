@@ -8,9 +8,8 @@ body {
 	background-color: white;
 	color: black;
 	font-family: "Fira Sans", sans-serif; 
-/* background-color: rgb(188, 197, 241); */
- background-color: transparent; /* Set background color to transparent */
-    opacity: 0; /* Set opacity to 0 */
+ background-color: transparent;
+ opacity: 0; /* Set opacity to 0 */
 }
 
 nav {
