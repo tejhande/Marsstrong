@@ -7,7 +7,8 @@
 body {
  	color: black;
 	font-family: "Fira Sans", sans-serif; 
- 	background-image: linear-gradient(to bottom right, #c9d6ff, #2974fa);
+ 	/* background-image: linear-gradient(to bottom right, #f9d89c, #f5e3e0); */
+	 background-image: linear-gradient(to bottom right, #a2faa3, #c5c5c5);
 }
 
 nav {
@@ -279,7 +280,8 @@ section .topic a {
 }
 
 .button button:hover {
-	background-color: #0beb43;
+	/* background-color: #0beb43; */
+	background-image: linear-gradient(to bottom right, #a7c5eb, #f6f7f8);
 }
 
 button {
@@ -405,7 +407,9 @@ li { display: flex;
 justify-content: space-between;}
 .box:hover {
 	transform: scale(1.1);
-	background-color: blue;
+	background-image: linear-gradient(to bottom right, #a7c5eb, #f6f7f8)
+	
+	/* background-image: linear-gradient(to bottom right, #f9d89c, #f5e3e0); */
 }
 h1:hover {
 	transform: scale(1.1);
