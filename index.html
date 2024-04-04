@@ -145,23 +145,24 @@
       <div class="content">
         <div class="title"><span>Sign Up</span> <br></div>
         <div class="contactMenu">
-          <form class="contact-form" id="myForm" onsubmit="return form_submit(event)">
+          <form class="contact-form" id="myForm"  action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="23ad46a3-8197-4db4-a7c2-6be9dbfe1d2c">
           <div class="input1">
             <div class="label1">Your Name</div>
             <div class="input2">
-              <input type="text" placeholder="Enter Your Name here" required pattern="[a-zA-Z\s]+" />
+              <input type="text" name="name" placeholder="Enter Your Name here" required pattern="[a-zA-Z\s]+" />
             </div>
             <div class="label1">
               <label>Your Email</label>
             </div>
             <div class="input2">
-              <input type="email" placeholder="example@gmail.com" required />
+              <input type="email" name="email" placeholder="example@gmail.com" required />
             </div>
             <div class="label1">
               <label>Your Mobile Number</label>
             </div>
             <div class="input2">
-              <input type="tel" id="mobile" placeholder="+91__________" pattern="^\+?([0-9]{12})$" required value="+91" />
+              <input type="tel" id="mobile" name="mobile" placeholder="+91__________" pattern="^\+?([0-9]{12})$" required value="+91" />
             </div>
             <div class="container">
               <div class="button">
@@ -222,6 +223,7 @@
       </div>
     </footer>
     <script src="Landing_Page.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
 </html>
 <!-- Tejas Hande
