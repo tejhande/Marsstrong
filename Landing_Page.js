@@ -35,6 +35,21 @@ function form_submit(event) {
     return false; 
 }
 
+var pageTitle = document.getElementById('documentTitle');
+    var originalTitle = pageTitle.textContent;
+
+    function handleVisibilityChange() {
+      if (document.hidden) {
+        // Change document title when the tab is hidden
+        pageTitle.textContent = 'Please Come Back🫣!';
+      } else {
+        // Restore original document title when the tab is visible again
+        pageTitle.textContent = originalTitle;
+      }
+    }
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
 // Tejas Hande
 // tejasamolhande@gmail.com
 // 8600828734
