@@ -20,7 +20,7 @@ function showWebsiteAlert() {
   document.getElementById("website").addEventListener("click", showWebsiteAlert);
   
 function myFunc(){
-	alert(`Welcome To Marsstrong`);
+	// alert(`Welcome To Marsstrong`);
 }
 
 function form_submit(event) {
