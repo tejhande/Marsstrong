@@ -213,7 +213,7 @@ section .topic a {
     margin: 10px 20px;
     height: auto;
     min-width: 30vw;
-    text-align: center;
+    text-align: start;
     border-radius: 12px;
     padding: 30px 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
