@@ -159,6 +159,7 @@ button:hover {
 	transform: scale(1.2);
 }
 
+
 /* Header content responsive */
 @media screen and (max-width: 980px) {
 	.side2 img {
@@ -215,7 +216,7 @@ section .topic a {
     text-align: center;
     border-radius: 12px;
     padding: 30px 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
 }
 
@@ -239,7 +240,7 @@ section .topic a {
 
 .title {
 	margin-bottom: 30px;
-	margin-left: 80px;
+	margin-left: 18vw;
 }
 
 .contactMenu {

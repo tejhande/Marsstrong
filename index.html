@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="logo1.png" type="image/x-icon">
   </head>
 
-  <body onload="myFunc()">
+  <body oncontextmenu="return false" onload="myFunc()">
     <nav>
       <div class="heading">Marsstrong</div>
       <span class="sideMenuButton" onclick="openNavbar()"> ☰ </span>
@@ -23,8 +23,7 @@
       </div>
     </nav>
 
-    <!-- Side navigation bar for 
-		responsive website -->
+    <!-- Side navigation bar for responsive website -->
     <div class="sideNavigationBar" id="sideNavigationBar">
       <a href="#" class="closeButton" onclick="closeNavbar()"> </a>
       <a href="#">Home</a>
@@ -37,7 +36,6 @@
       <div class="side1">
         <h1>Marsstrong International</h1>
         <button>
-          <!-- <a href="https://tejhande.github.io/T/" target="_blank" id="website"> -->
           <a href="https://maps.app.goo.gl/R141sJ9xNeFvhWHLA" target="_blank" id="explore_button">
             Explore More
           </a>
@@ -94,9 +92,13 @@
           </div>
           <div class="box">
             <div class="topic">
-            <a>Import & Export </a>
+            <a>Import & Export</a>
             </div> <br>
-            <p><ul><li>• Export & Import Data</li></ul></p>
+            <p>
+              <ul>
+                <li>• Export & Import Data</li>
+              </ul>
+            </p>
           </div>
           <div class="box">
             <div class="topic">
