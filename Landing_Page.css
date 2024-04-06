@@ -24,7 +24,7 @@ nav {
 nav .heading {
 	font-size: 30px;
 	font-weight: 700;
-	color: white;
+	color: red;
 	text-transform: uppercase;
 }
 
@@ -137,7 +137,7 @@ nav .sideMenuButton {
 .side1 h1 {
 	font-size: 60px;
 	margin-bottom: 10px;
-	color: black;
+	color: red;
 }
 
 .side1 button {
@@ -213,13 +213,15 @@ section .topic a {
     margin: 10px 20px;
     height: auto;
     min-width: 30vw;
-    text-align: start;
+    text-align: center;
     border-radius: 12px;
     padding: 30px 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
 }
-
+.about .boxes .box li{
+	text-align: start;
+}
 /* Contact Page */
 
 .contact {
