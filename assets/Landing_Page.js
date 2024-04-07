@@ -7,18 +7,43 @@ function closeNavbar() {
 		.style.width = "0%";
 }
 
-function showMapsAlert() {
-	alert("Redirecting To Google Maps!");
+function showMapsAlert(event) {
+  event.preventDefault(); // Prevents the default action of the link
+  var confirmed = confirm("Redirecting To Google Maps. Continue?");
+  if (confirmed) {
+      window.open(this.href, '_blank'); // Opens link in a new tab
+  } else {
+      // Do nothing, or handle cancellation as needed
   }
-  
-  document.getElementById("explore_button").addEventListener("click", showMapsAlert);
-  
-function showWebsiteAlert() {
-	alert("Redirecting To Creators Portfolio Website!");
+}
+
+function showWebsiteAlert(event) {
+  event.preventDefault(); // Prevents the default action of the link
+  var confirmed = confirm("Redirecting To Creators Portfolio Website. Continue?");
+  if (confirmed) {
+      window.open(this.href, '_blank'); // Opens link in a new tab
+  } else {
+      // Do nothing, or handle cancellation as needed
   }
-  
-  document.getElementById("website").addEventListener("click", showWebsiteAlert);
-  
+}
+
+// Ensure that the elements exist before adding event listeners
+document.addEventListener("DOMContentLoaded", function() {
+  var exploreButton = document.getElementById("explore_button");
+  if (exploreButton) {
+      exploreButton.addEventListener("click", showMapsAlert);
+  } else {
+      console.error("Explore button not found!");
+  }
+
+  var websiteLink = document.getElementById("website");
+  if (websiteLink) {
+      websiteLink.addEventListener("click", showWebsiteAlert);
+  } else {
+      console.error("Website link not found!");
+  }
+});
+
 function myFunc(){
 	// alert(`Welcome To Marsstrong`);
 }
