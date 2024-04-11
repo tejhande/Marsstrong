@@ -18,7 +18,7 @@ nav {
 	justify-content: space-between;
 	padding: 20px 5%;
 	/* background-color: #7e5be6; */
-	background-color: #a3cb38;
+	background-color: #a3cb38;border: 1px solid #000;
 }
 
 nav .heading {
@@ -218,6 +218,7 @@ section .topic a {
     padding: 30px 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
+	border: 1px solid #000;
 }
 .about .boxes .box li{
 	text-align: start;
@@ -410,9 +411,9 @@ footer .footer span a:hover {
 li { display: flex;
 justify-content: space-between;}
 .box:hover {
-	transform: scale(1.1);
-	background-image: linear-gradient(to bottom right, #a7c5eb, #f6f7f8)
-	
+	transform: scale(1.08);
+	background-image: linear-gradient(to bottom right, #60a0f4, #c7e2fd)
+	/* background-image: linear-gradient(to bottom right, #60a0f4, #f6f7f8) */
 	/* background-image: linear-gradient(to bottom right, #f9d89c, #f5e3e0); */
 }
 h1:hover {
