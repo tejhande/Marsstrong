@@ -285,8 +285,8 @@ section .topic a {
 }
 
 .button button:hover {
-	/* background-color: #0beb43; */
-	background-image: linear-gradient(to bottom right, #a7c5eb, #f6f7f8);
+	background-image: linear-gradient(to bottom right, #60a0f4, #c7e2fd);
+	border-radius: 50px;
 }
 
 button {
