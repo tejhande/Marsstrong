@@ -10,6 +10,12 @@ body {
  	/* background-image: linear-gradient(to bottom right, #f9d89c, #f5e3e0); */
 	 background-image: linear-gradient(to bottom right, #a2faa3, #c5c5c5);
 }
+#Home {
+	background-image: url('/images/bg.jpg'); /* Use !important to give this rule the highest priority */
+	background-size: 100vw 100vh !important; /* Use !important to give this rule the highest priority */
+	background-position: center !important; /* Use !important to give this rule the highest priority */
+	background-repeat: no-repeat !important; /* Use !important to give this rule the highest priority */
+  }
 
 nav {
 	width: 100vw;
@@ -127,11 +133,12 @@ nav .sideMenuButton {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 2% 5%;
+	height:90vh;
 }
 
 .line .side1 {
 	padding-right: 50px;
+	margin-left: 5vw;
 }
 
 .side1 h1 {
@@ -373,6 +380,10 @@ footer .footer span a:hover {
 }
 
 @media screen and (max-width: 600px) {
+	#Home {
+		background-size: 100vw 90vh; /* Adjusted background size for smaller screens */
+		background-image: url("/images/bg1.jpg") !important; /* Background image */
+	  }
 	.side2 img {
 		width: 100%;
 	}
@@ -403,6 +414,15 @@ footer .footer span a:hover {
 	}
 	.msg{
 		max-width: 95vw;
+	}
+	.line{
+		flex-direction: column;
+		margin-top: 0;
+		justify-content: start;
+		display: grid;
+	}
+	.side2{
+		margin-top: -20%;
 	}
 }
 .box {
