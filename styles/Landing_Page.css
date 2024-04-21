@@ -9,6 +9,10 @@ body {
 	font-family: "Fira Sans", sans-serif; 
  	/* background-image: linear-gradient(to bottom right, #f9d89c, #f5e3e0); */
 	 background-image: linear-gradient(to bottom right, #a2faa3, #c5c5c5);
+	 -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none;
 }
 #Home {
 	background-image: url('/images/bg.jpg'); /* Use !important to give this rule the highest priority */
