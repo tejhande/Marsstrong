@@ -175,6 +175,7 @@ button:hover {
 @media screen and (max-width: 980px) {
 	.side2 img {
 		width: 350px;
+		margin-top: 30vh;
 	}
 
 	.side1 h1 {
