@@ -467,3 +467,26 @@ tejasamolhande@gmail.com
 	width: 400px;
 	border-radius: 13px;
 }
+
+/* Form Buttons */
+.button button[type="submit"] {
+  border: none !important;
+  background: green !important;
+  color: white !important;
+}
+
+.button button[type="reset"] {
+  border: none !important;
+  background: black !important;
+  color: white !important;
+}
+
+.button button[type="submit"]:hover {
+  background: rgb(34, 139, 34) !important; /* Darker green */
+  color: #ffffff !important;
+}
+
+.button button[type="reset"]:hover {
+  background: rgb(216, 102, 102) !important;
+  color: #ffffff !important;
+}
