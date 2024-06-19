@@ -19,6 +19,7 @@ body {
 	background-size: 100vw 100vh !important; /* Use !important to give this rule the highest priority */
 	background-position: center !important; /* Use !important to give this rule the highest priority */
 	background-repeat: no-repeat !important; /* Use !important to give this rule the highest priority */
+	height: 90vh;
   }
 
 nav {
@@ -388,9 +389,16 @@ footer .footer span a:hover {
 	#Home {
 		background-size: 100vw 90vh; /* Adjusted background size for smaller screens */
 		background-image: url("/images/bg1.jpg") !important; /* Background image */
+		height: 100vh;
 	  }
 	.side2 img {
 		width: 100%;
+		display: none;
+	}
+
+	.unique-side1{
+		position: absolute !important;
+		top: 150px !important;
 	}
 
 	section .topic a {
@@ -451,9 +459,6 @@ h1:hover {
 	transform: scale(1.01);
 
 }
-/* Tejas Hande
-tejasamolhande@gmail.com
-8600828734 */
 
 .address:hover{
 	text-decoration: underline solid black;
@@ -461,32 +466,219 @@ tejasamolhande@gmail.com
 
 ::-webkit-scrollbar {
     display: none;
-}
-
-.msg{
-	width: 400px;
-	border-radius: 13px;
+		}
+		
+		.msg{
+			width: 400px;
+			border-radius: 13px;
 }
 
 /* Form Buttons */
 .button button[type="submit"] {
-  border: none !important;
+	border: none !important;
   background: green !important;
   color: white !important;
-}
+	}
+	
+	.button button[type="reset"] {
+		border: none !important;
+		background: black !important;
+		color: white !important;
+		}
+		
+		.button button[type="submit"]:hover {
+			background: rgb(34, 139, 34) !important; /* Darker green */
+			color: #ffffff !important;
+			}
+			
+			.button button[type="reset"]:hover {
+				background: rgb(216, 102, 102) !important;
+				color: #ffffff !important;
+				}
+				
+				
+				.explore {
+					background: #fff !important;
+					border: none !important;
+					padding: 10px 20px !important;
+					display: inline-block !important;
+					font-size: 15px !important;
+					font-weight: 600 !important;
+					width: 170px !important;
+					text-transform: uppercase !important;
+					cursor: pointer !important;
+					transform: skew(-21deg) !important;
+					position: relative !important; /* Added to support pseudo-element positioning */
+					}
+					
+					.span1 {
+						display: inline-block !important;
+  transform: skew(21deg) !important;
+	}
 
-.button button[type="reset"] {
-  border: none !important;
-  background: black !important;
-  color: white !important;
-}
+.explore::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 100% !important;
+  left: 0 !important;
+  background: rgb(20, 20, 20) !important;
+  opacity: 0 !important;
+  z-index: -1 !important;
+  transition: all 0.5s !important;
+	}
+	
+	.explore:hover,
+	.explore:hover .span1,
+	.explore:hover .span1 a {
+		color: #fff !important;
+		}
+		
+		.explore:hover::before {
+			left: 0 !important;
+  right: 0 !important;
+  opacity: 1 !important;
+	}
+	
+	/* Tejas Hande
+	tejasamolhande@gmail.com
+	8600828734 */
 
-.button button[type="submit"]:hover {
-  background: rgb(34, 139, 34) !important; /* Darker green */
-  color: #ffffff !important;
-}
 
-.button button[type="reset"]:hover {
-  background: rgb(216, 102, 102) !important;
-  color: #ffffff !important;
-}
+	.card p {
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 20px;
+		color: #666;
+	}
+	
+	.card p.small {
+		font-size: 14px;
+	}
+	
+	.go-corner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		overflow: hidden;
+		top: 0;
+		right: 0;
+		background-color: #00838d;
+		border-radius: 0 4px 0 32px;
+	}
+	
+	.go-arrow {
+		margin-top: -4px;
+		margin-right: -4px;
+		color: white;
+		font-family: courier, sans;
+	}
+	
+	.card {
+		display: block;
+		position: relative;
+		width: 450px;
+		max-width: 90vw;
+		background-color: #58ddf5c1;
+		border-radius: 12px;
+		padding: 32px 24px;
+		margin: 12px;
+		text-decoration: none;
+		z-index: 0;
+		overflow: hidden;
+	}
+	
+	.card:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: -16px;
+		right: -16px;
+		background: #44aff2;
+		height: 32px;
+		width: 32px;
+		border-radius: 32px;
+		transform: scale(1);
+		transform-origin: 50% 50%;
+		transition: transform 0.25s ease-out;
+	}
+	
+	.card:hover:before {
+		transform: scale(35);
+	}
+	
+	.card:hover p {
+		transition: all 0.3s ease-out;
+		color: rgba(255, 255, 255, 0.8);
+	}
+	
+	.card:hover h3 {
+		transition: all 0.3s ease-out;
+		color: #fff;
+	}
+	
+
+
+
+
+
+	.unique-line {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px;
+	}
+	
+	.unique-side1 {
+		flex: 1;
+		text-align: left;
+	}
+	
+	.unique-side2 {
+		flex: 1;
+		text-align: right;
+	}
+	
+	.unique-heading {
+		color:#000 !important;
+		font-size: 3rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		background: linear-gradient(45deg, #ff0000, #4800ff);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		position: relative;
+		animation: unique-float 3s ease-in-out infinite;
+		margin: 0;
+		max-width: 90vw;
+	}
+	
+	.unique-heading::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
+	
+	.unique-heading:hover::after {
+		opacity: 1;
+	}
+	
+	@keyframes unique-float {
+		0%, 100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-20px);
+		}
+	}
+	

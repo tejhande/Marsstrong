@@ -15,7 +15,7 @@
 <body oncontextmenu="return false" onload="myFunc()">
   <nav>
     <div class="heading">Marsstrong</div>
-    <span class="sideMenuButton" onclick="openNavbar()">☰</span>
+    <!-- <span class="sideMenuButton" onclick="openNavbar()">☰</span> -->
     <div class="navbar">
       <ul>
         <li><a href="#Home">Home</a></li>
@@ -35,12 +35,12 @@
 
 
     <!-- Content -->
-    <div class="line" id="Home">
-      <div class="side1">
-        <h1>Marsstrong International</h1>
-        <button>
-          <a href="https://maps.app.goo.gl/R141sJ9xNeFvhWHLA" target="_blank" id="explore_button">Explore More</a>
-        </button>
+    <div class="unique-line" id="Home">
+      <div class="unique-side1">
+        <h1 class="unique-heading">Marsstrong International</h1>
+        <button class="explore">
+          <span class="span1"><a href="https://maps.app.goo.gl/R141sJ9xNeFvhWHLA" target="_blank" id="explore_button">Explore More</a></span>
+        </button>              
       </div>
       <div class="side2">
         <img src="images/logo.png" width="500" alt="Marsstrong International Logo">
@@ -55,7 +55,7 @@
         </div>
         <div class="boxes">
           <!-- Service Box 1: Company Incorporation -->
-          <div class="box">
+          <a class="card">
             <div class="topic">
               <h2>Company Incorporation</h2>
             </div> <br>
@@ -67,10 +67,11 @@
               <li>● Cooperative Society</li>
               <li>● Public Limited Company</li>
             </ul>
-          </div>
+            <div class="go-corner"><div class="go-arrow">→</div></div>
+          </a>
           
           <!-- Service Box 2: Registrations & Filings -->
-          <div class="box">
+          <a class="card">
             <div class="topic">
               <h2>Registrations & Filings</h2>
             </div> <br>
@@ -82,10 +83,11 @@
               <li>● PAN/TAN</li>
               <li>● FASSAI Registration</li>
             </ul>
-          </div>
-    
+            <div class="go-corner"><div class="go-arrow">→</div></div>
+          </a>
+          
           <!-- Service Box 3: Shipping & Logistics -->
-          <div class="box">
+          <a class="card">
             <div class="topic">
               <h2>Shipping & Logistics</h2>
             </div> <br>
@@ -97,10 +99,11 @@
               <li>● Transport Management</li>
               <li>● Documentation Services</li>
             </ul>
-          </div>
+            <div class="go-corner"><div class="go-arrow">→</div></div>
+          </a>
           
           <!-- Service Box 4: Import & Export -->
-          <div class="box">
+          <a class="card">
             <div class="topic">
               <h2>Import & Export</h2>
             </div> <br>
@@ -112,10 +115,11 @@
               <li>● International Trade Finance</li>
               <li>● Supply Chain Management</li>
             </ul>
-          </div>
+            <div class="go-corner"><div class="go-arrow">→</div></div>
+          </a>
           
           <!-- Service Box 5: DGFT Services in Mumbai -->
-          <div class="box">
+          <a class="card">
             <div class="topic">
               <h2>DGFT Services in Mumbai</h2>
             </div> <br>
@@ -127,10 +131,11 @@
               <li>● Foreign Trade Policy Interpretation and Advisory</li>
               <li>● Export Promotion Capital Goods (EPCG) Scheme Execution</li>
             </ul>
-          </div>
+            <div class="go-corner"><div class="go-arrow">→</div></div>
+          </a>
           
           <!-- Service Box 6: DGFT Services in Delhi -->
-          <div class="box">
+          <a class="card">
             <div class="topic">
               <h2>DGFT Services in Delhi</h2>
             </div> <br>
@@ -142,10 +147,11 @@
               <li>● Exporter Obligation Discharge Certificate Processing</li>
               <li>● Importer Exporter Code Surrender and Revocation Services</li>
             </ul>
-          </div>
+            <div class="go-corner"><div class="go-arrow">→</div></div>
+          </a>
           
           <!-- Service Box 7: Post Export Activities -->
-          <div class="box">
+          <a class="card">
             <div class="topic">
               <h2>Post Export Activities at Customs</h2>
             </div> <br>
@@ -157,10 +163,12 @@
               <li>● Rebate of State Levies (ROSL) Claims</li>
               <li>● Export Manifest Filing</li>
             </ul>
-          </div>
+            <div class="go-corner"><div class="go-arrow">→</div></div>
+          </a>
         </div>
       </div>
     </section>
+    
     
 
     <section class="contact" id="contact">
