@@ -577,20 +577,40 @@ h1:hover {
 		color: white;
 		font-family: courier, sans;
 	}
-	
+
 	.card {
 		display: block;
 		position: relative;
-		width: 450px;
-		max-width: 90vw;
+		width: 90%;
+		max-width: 450px;
 		background-color: #58ddf5c1;
 		border-radius: 12px;
 		padding: 32px 24px;
-		margin: 12px;
+		margin: 12px auto; /* Centering the card */
 		text-decoration: none;
 		z-index: 0;
 		overflow: hidden;
+		box-sizing: border-box;
 	}
+	
+	/* Media query for smaller screens */
+	@media (max-width: 768px) {
+		.card {
+			padding: 24px 16px;
+			width: 90%;
+			margin: 8px auto;
+		}
+	}
+	
+	/* Media query for very small screens */
+	@media (max-width: 480px) {
+		.card {
+			padding: 16px 12px;
+			width: 90%;
+			margin: 6px auto;
+		}
+	}
+	
 	
 	.card:before {
 		content: "";
