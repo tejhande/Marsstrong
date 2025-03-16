@@ -678,6 +678,7 @@ h1:hover {
 		font-weight: bold;
 		text-transform: uppercase;
 		background: linear-gradient(45deg, #ff0000, #4800ff);
+		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		position: relative;
