@@ -269,11 +269,11 @@
             <h2>Internship Application</h2>
             <p>Fill out the form to apply for your preferred internship</p>
           </div>
-
           <form
             id="internshipForm"
             action="https://api.web3forms.com/submit"
             method="POST"
+            onsubmit="return validateLinkedInFollow()"
           >
             <!-- Web3Forms API Key -->
             <input
@@ -282,10 +282,7 @@
               value="ef9fbfa4-de15-4b02-952e-550b4ac6a73f"
             />
 
-            <!-- Honeypot (optional) -->
-            <!-- <input type="hidden" name="honeypot" style="display: none" /> -->
-
-            <!-- Redirect URL on successful submission (optional) -->
+            <!-- Redirect URL on successful submission -->
             <input
               type="hidden"
               name="redirect"
@@ -315,7 +312,17 @@
                   required
                 />
               </div>
-
+              <div class="form-group">
+                <label for="linkedinProfile">Your LinkedIn Profile URL</label>
+                <input
+                  type="url"
+                  id="linkedinProfile"
+                  name="linkedinProfile"
+                  class="form-control"
+                  placeholder="Enter your LinkedIn profile URL"
+                  required
+                />
+              </div>
               <div class="form-group">
                 <label for="email">Email Address</label>
                 <input
@@ -385,13 +392,81 @@
                 placeholder="Briefly describe your interest and relevant skills..."
               ></textarea>
             </div>
-        <input type="hidden" name="razorpay_payment_id" id="razorpay_payment_id" />
+            <div class="form-group">
+              <label
+                style="
+                  display: block;
+                  font-weight: bold;
+                  color: red;
+                  margin-bottom: 4px;
+                "
+              >
+                Please follow
+                <a
+                  href="https://www.linkedin.com/company/marsstrong/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="linkedinLink"
+                   style="
+                  font-weight: bold;
+                  color: rgb(0, 13, 255);
+                "
+                >
+                MarsStrong on LinkedIn
+                </a>
+                to submit this form.
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  id="followedMarsStrong"
+                  name="followedMarsStrong"
+                  disabled
+                  required
+                />
+                I have followed MarsStrong on LinkedIn
+              </label>
+            </div>
 
-            <!-- <button type="button" class="btn submit-btn" onclick="makePayment()">Pay & Apply</button> -->
             <button type="submit" class="btn submit-btn">
               Submit Application
             </button>
           </form>
+
+          <script>
+            const linkedinLink = document.getElementById("linkedinLink");
+            const checkbox = document.getElementById("followedMarsStrong");
+
+            linkedinLink.addEventListener("click", () => {
+              checkbox.disabled = false;
+            });
+
+            function validateLinkedInFollow() {
+              if (!checkbox.checked) {
+                alert(
+                  "Please confirm that you have followed MarsStrong on LinkedIn."
+                );
+                return false;
+              }
+
+              const linkedinURL = document
+                .getElementById("linkedinProfile")
+                .value.trim();
+
+              if (!linkedinURL) {
+                alert("Please enter your LinkedIn profile URL.");
+                return false;
+              }
+
+              const linkedInPattern = /^https?:\/\/(www\.)?linkedin\.com\/.+$/i;
+              if (!linkedInPattern.test(linkedinURL)) {
+                alert("Please enter a valid LinkedIn profile URL.");
+                return false;
+              }
+
+              return true;
+            }
+          </script>
         </div>
       </div>
     </section>
@@ -429,7 +504,11 @@
             <h3>Contact Us</h3>
             <p><i class="fas fa-map-marker-alt"></i> Mumbai: Thane, 421204</p>
             <p><i class="fas fa-phone"></i> +91 8788015377</p>
-            <p><a href="mailto:marsstrong4@gmail.com"><i class="fas fa-envelope"></i> marsstrong4@gmail.com</a></p>
+            <p>
+              <a href="mailto:marsstrong4@gmail.com"
+                ><i class="fas fa-envelope"></i> marsstrong4@gmail.com</a
+              >
+            </p>
           </div>
         </div>
 
@@ -438,7 +517,6 @@
         </div>
       </div>
     </footer>
-    
     <!-- <script src="https://checkout.razorpay.com/v1/checkout.js"></script> -->
     <script src="internship.js"></script>
   </body>
