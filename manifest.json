@@ -1,0 +1,8 @@
+{
+  "name": "My App",
+  "serviceworker": {
+    "src": "/service-worker.js",
+    "scope": "/",
+    "type": "classic"
+  }
+}
